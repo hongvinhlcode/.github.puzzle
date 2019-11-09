@@ -1,0 +1,10 @@
+E:\oop_big_project\project_big\project_big\bin\Debug\project_big.exe.config
+E:\oop_big_project\project_big\project_big\bin\Debug\project_big.exe
+E:\oop_big_project\project_big\project_big\bin\Debug\project_big.pdb
+E:\oop_big_project\project_big\project_big\obj\Debug\project_big.csprojAssemblyReference.cache
+E:\oop_big_project\project_big\project_big\obj\Debug\project_big.Form1.resources
+E:\oop_big_project\project_big\project_big\obj\Debug\project_big.Properties.Resources.resources
+E:\oop_big_project\project_big\project_big\obj\Debug\project_big.csproj.GenerateResource.cache
+E:\oop_big_project\project_big\project_big\obj\Debug\project_big.exe
+E:\oop_big_project\project_big\project_big\obj\Debug\project_big.pdb
+E:\oop_big_project\project_big\project_big\obj\Debug\project_big.Form2.resources
