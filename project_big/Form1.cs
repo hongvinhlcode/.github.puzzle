@@ -96,7 +96,7 @@ namespace project_big
         {
             LoadPicture(Application.StartupPath + "\\myImage.jpg");
         }
-        
+                
         private void picCell_MouseMove(object sender, MouseEventArgs e)
         {
             PictureBox pic = (PictureBox)sender;
@@ -312,10 +312,7 @@ namespace project_big
             Form1_Load(null, null);                      
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-            
-        }
+       
 
         private void toolStripMenuItem6_Click(object sender, EventArgs e)
         {
@@ -326,31 +323,35 @@ namespace project_big
             Form1_Load(null, null);
         }
 
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
         //--------------------------------------------------------------------------    
         private void DeleteImage()
         {
             if (ImageFile != null)
             {
                 int index = 0;
-                for (int i = 0; i < PIECE_COUNT; i++)
-                {                    
-                    for (int j = 0; j < PIECE_COUNT; j++)
+                for (int i = 0; i < PIECE_COUNT*PIECE_COUNT; i++)
+                {
+                    try
                     {
-                        try
-                        {                           
-                            panel1.Controls.Remove(picCell[index]);
-                            index++;
-                        }
-                        catch (Exception)
-                        {
-                        }
+                        panel1.Controls.Remove(picCell[index]);
+                        index++;
+                    }
+                    catch (Exception)
+                    {
                     }
                 }
             }
         }        
         private void toolStripMenuItem9_Click_1(object sender, EventArgs e)
         {
-            Application.Exit();
+            if(MessageBox.Show("Bạn có chắc muốn thoát?", "Exit", MessageBoxButtons.OKCancel,MessageBoxIcon.Question) == System.Windows.Forms.DialogResult.OK)
+            {
+                Application.Exit();
+            }
         }
 
         private void toolStripMenuItem8_Click_1(object sender, EventArgs e)
